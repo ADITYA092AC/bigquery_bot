@@ -1,4 +1,4 @@
-import db-dtypes
+import db_dtypes
 import streamlit as st
 from google.cloud import bigquery
 import os
