@@ -6,8 +6,8 @@ import pandas as pd
 import google.generativeai as genai
 import json
 
-google_api_key = os.getenv("GOOGLE_API_KEY")
-# os.environ["GOOGLE_API_KEY"] = "AIzaSyAVOqu6zxBPGCRRYMYrpyToLaDkhvW_nLU"
+#google_api_key = os.getenv("GOOGLE_API_KEY")
+os.environ["GOOGLE_API_KEY"] = "AIzaSyAVOqu6zxBPGCRRYMYrpyToLaDkhvW_nLU"
 
 # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "credentials.json"
 
