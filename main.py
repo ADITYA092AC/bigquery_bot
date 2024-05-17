@@ -9,7 +9,7 @@ import json
 #google_api_key = os.getenv("GOOGLE_API_KEY")
 os.environ["GOOGLE_API_KEY"] = "AIzaSyAVOqu6zxBPGCRRYMYrpyToLaDkhvW_nLU"
 
-# os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "credentials.json"
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "credentials.json"
 
 
 with st.sidebar:
@@ -19,11 +19,11 @@ with st.sidebar:
     submit = st.button("Submit")
     
     if submit and json_file:
-        # Save the uploaded file to disk
-        with open("credentials.json", "wb") as f:
-            f.write(json_file.read())
-        with open('credentials.json') as f:
-            project_name = json.load(f)['project_id']
+        # # Save the uploaded file to disk
+        # with open("credentials.json", "wb") as f:
+        #     f.write(json_file.read())
+        # with open('credentials.json') as f:
+        #     project_name = json.load(f)['project_id']
        
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "credentials.json"
         st.success("Credentials uploaded successfully.")
